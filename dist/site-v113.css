@@ -1,0 +1,69 @@
+/* V1.1.3: closing composition and quieter reading surfaces; inherited type only. */
+:is(#experience,#competence,#motion,#adaptation,#screening,#shelf,#contact) {
+  background-image:linear-gradient(to bottom,#080a0800,#080a08c9 72px,#080a08c9 calc(100% - 72px),#080a0800);
+}
+.experience-item { border-top-color:#e6eed81c; }
+.work-card { border-color:#e6eed820; }
+#competence .competence-cards>article { border-color:#e6eed820; }
+@media (hover:hover) and (pointer:fine) {
+  #competence .competence-cards>article:hover { border-color:#d0f529; }
+}
+#competence .competence-cards>article:focus-visible,
+#competence .competence-cards>article:has(a:focus-visible),
+#competence .competence-cards>article:active { border-color:#d0f529; }
+.document-card { border-top-color:#e6eed820; }
+.aigc-route path,.trailer-route path { opacity:.55; }
+.document-card .doc-preview {
+  width:min(100%,var(--source-width),calc(min(640px,70svh) * var(--source-ratio)));
+  aspect-ratio:var(--source-ratio);
+}
+.document-card .doc-preview img { width:100%; height:100%; }
+@media (max-width:600px) {
+  .document-card .doc-preview { width:min(100%,var(--source-width),calc(60svh * var(--source-ratio))); }
+}
+
+/* One closing group: portrait, invitation, and contact actions share alignments. */
+.contact { min-height:calc(100svh - 84px); display:flex; flex-direction:column; }
+.photo-contact-grid {
+  grid-template-columns:240px minmax(0,1fr); gap:56px;
+  width:100%; max-width:1040px; margin-inline:auto; margin-block:auto;
+  align-items:start; padding:28px 0 60px;
+}
+.contact-portrait {
+  grid-column:1; grid-row:1; order:0; justify-self:start; align-self:start;
+  width:100%; aspect-ratio:4/5; margin:4px 0 0; border-color:#e6eed825;
+  position:relative; isolation:isolate;
+}
+.contact-portrait img {
+  object-position:42% 65%; transform:scale(1.8); transform-origin:38% 70%;
+}
+.contact-portrait::after {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  box-shadow:inset 0 0 24px #080a0814;
+}
+.contact-copy { grid-column:2; grid-row:1; order:0; gap:24px; }
+.contact-links.liquid-glass {
+  background:transparent; border:0; border-radius:0; box-shadow:none; padding:0;
+}
+.contact-copy .contact-links { gap:18px; }
+#copy-status:empty { display:none; }
+.contact-copy .contact-links>div {
+  padding-top:18px; border-top-color:#e6eed81f; gap:16px 28px;
+}
+.contact-links .contact-methods { flex-wrap:wrap; }
+.contact .footer-bottom { border-top-color:#e6eed826; flex:none; }
+@media (min-width:701px) and (max-width:1100px) {
+  .photo-contact-grid { grid-template-columns:200px minmax(0,1fr); gap:32px; padding-block:28px 48px; }
+  .contact-copy { gap:22px; }
+}
+@media (max-width:700px) {
+  .photo-contact-grid {
+    grid-template-columns:92px minmax(0,1fr); gap:24px 16px;
+    padding:12px 0 36px; align-items:center;
+  }
+  .contact-copy { display:contents; }
+  .contact-portrait { grid-column:1; grid-row:1; margin:0; width:92px; }
+  .contact-invite { grid-column:2; grid-row:1; max-width:none; }
+  .contact-links.liquid-glass { grid-column:1/-1; grid-row:2; width:100%; }
+  .contact-copy .contact-links>div { gap:14px 24px; }
+}

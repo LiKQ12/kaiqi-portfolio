@@ -1,0 +1,4 @@
+/* V8.1: show the whole original page without a letterbox. */
+.document-card .doc-preview{aspect-ratio:auto;background:transparent;border:0;padding:0;line-height:0;align-self:center;justify-self:end;width:fit-content;max-width:100%;}
+.document-card .doc-preview img{width:auto;height:auto;max-width:100%;max-height:min(640px,70svh);object-fit:contain;background:transparent;display:block;transform:none;}
+.document-card .doc-preview:hover img{transform:none;}

@@ -1,0 +1,1 @@
+window.PORTFOLIO_MEDIA_DIMENSIONS={"assets/docs/prd/page-1.webp":[596,842],"assets/docs/competitor/page-1.webp":[1500,844],"assets/docs/marketing-case-v81/page-1.webp":[1440,810],"assets/docs/marketing-phenomenon/page-1.webp":[1152,648]};
