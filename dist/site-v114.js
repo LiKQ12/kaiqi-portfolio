@@ -20,7 +20,7 @@ window.initPortfolioMedia=function(videos){
       else if(s.wanted&&v.readyState<3)feedback(v,'加载较慢，可稍候或重试',true);},12000);
   }
   function start(v,retry=false){
-    const s=states.get(v);s.wanted=true;s.start.hidden=true;
+    const s=states.get(v);s.wanted=true;s.start.hidden=true;v.controls=true;
     for(const other of videos)if(other!==v&&!other.paused)other.pause();
     if(v.dataset.poster)v.poster=v.dataset.poster;
     const elapsedAt=performance.now();s.clickedAt=elapsedAt;
@@ -53,6 +53,8 @@ window.initPortfolioMedia=function(videos){
     v.dataset.mediaState='idle';v.setAttribute('aria-label',frame.nextElementSibling?.querySelector('h3')?.textContent||'作品视频');
     if(posterObserver)posterObserver.observe(v);else if(v.dataset.poster)v.poster=v.dataset.poster;
     startButton.addEventListener('click',()=>start(v));retry.addEventListener('click',()=>start(v,true));
+    // Native controls are disabled without a source; the poster is the first-play entry.
+    v.addEventListener('click',()=>{if(!v.getAttribute('src'))start(v);});
     v.addEventListener('keydown',event=>{
       if(!v.getAttribute('src')&&[' ','Enter'].includes(event.key)){event.preventDefault();start(v);}
     });
@@ -89,14 +91,14 @@ content.aigc.forEach((item,i)=>{
   article.className=`aigc-item route-item ${i%2?"reverse":""}`;
   article.style.setProperty("--tilt",i%2?"-1":"1");
   article.dataset.snap="";
-  article.innerHTML=`<div class="media-window"><video controls playsinline preload="none" data-poster="${item.poster}" data-src="${item.src}" data-cursor="播放"></video><button type="button" class="play-hint video-start" aria-label="播放${item.title}">▶</button></div><div class="media-copy"><span class="media-number">0${i+1} / 04</span><h3>${item.title}</h3><h4>${item.subtitle}</h4><p class="copy-lines">${copyLines(item.description)}</p><p class="role-tag">${item.role}</p></div>`;
+  article.innerHTML=`<div class="media-window"><video playsinline tabindex="0" preload="none" data-poster="${item.poster}" data-src="${item.src}" data-cursor="播放"></video><button type="button" class="play-hint video-start" aria-label="播放${item.title}">▶</button></div><div class="media-copy"><span class="media-number">0${i+1} / 04</span><h3>${item.title}</h3><h4>${item.subtitle}</h4><p class="copy-lines">${copyLines(item.description)}</p><p class="role-tag">${item.role}</p></div>`;
   article.dataset.copyId=item.copyId; article.id='work-'+item.copyId; aigcList.append(article);
 });
 
 const trailers=$("#trailers");
 content.trailers.forEach((item,i)=>{
   const article=document.createElement("article"); article.className=`trailer-card route-item ${i%2?"reverse":""}`; article.dataset.snap=""; article.style.setProperty("--tilt",i%2?"-1":"1");
-  article.innerHTML=`<div class="media-window"><video controls playsinline preload="none" data-poster="${item.poster}" data-src="${item.src}" data-cursor="播放"></video><button type="button" class="play-hint video-start" aria-label="播放${item.title}">▶</button></div><div class="media-copy"><span class="media-number">0${i+1} / 06</span><h3>${item.title}</h3><h4>${item.subtitle}</h4><p class="copy-lines">${copyLines(item.description)}</p><p class="role-tag">${item.role}</p></div>`;
+  article.innerHTML=`<div class="media-window"><video playsinline tabindex="0" preload="none" data-poster="${item.poster}" data-src="${item.src}" data-cursor="播放"></video><button type="button" class="play-hint video-start" aria-label="播放${item.title}">▶</button></div><div class="media-copy"><span class="media-number">0${i+1} / 06</span><h3>${item.title}</h3><h4>${item.subtitle}</h4><p class="copy-lines">${copyLines(item.description)}</p><p class="role-tag">${item.role}</p></div>`;
   article.dataset.copyId=item.copyId; article.id='work-'+item.copyId; trailers.append(article);
 });
 

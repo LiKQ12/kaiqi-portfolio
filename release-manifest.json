@@ -1,7 +1,7 @@
 {
   "version": "1.1.4",
   "source": "V1.1.3 verified release; performance assets derived; approved copy and type preserved",
-  "unpackedBytes": 424458843,
+  "unpackedBytes": 424459072,
   "files": [
     {
       "path": ".nojekyll",
@@ -1645,18 +1645,19 @@
     },
     {
       "path": "index.html",
-      "bytes": 37570,
-      "sha256": "6457cbcbbd4e695cc649f52fdb59bcf2843af37099377e1b4f72c7b47a662f63"
+      "bytes": 37588,
+      "sha256": "28121f4c95c763bc689726eb963de79191e6d4a583b24ef6ff5aa34f86d39db8"
     },
     {
       "path": "site-v114.css",
-      "bytes": 126072,
-      "sha256": "126ae26697bc914adce19b5ff1c91ea52774a6db1b362164c3221e962aa75e32"
+      "bytes": 126092,
+      "sha256": "c0783f18ade190ebc747ca2071c3a2a8a782f2cdafc91e27b532a0740b5db2d6"
     },
     {
       "path": "site-v114.js",
-      "bytes": 62574,
-      "sha256": "e20c0c5e16caec2b37a29cfd65d8ee2cce9ab17b861b061453e54891b435af55"
+      "bytes": 62765,
+      "sha256": "39b430798b3b180e4c955b1614d43dc04020f828f8bdcb72bfc632a3b876b0a1"
     }
-  ]
+  ],
+  "patch": "2026-10-19: visible first-play button and clickable poster; native controls appear on intentional load"
 }
