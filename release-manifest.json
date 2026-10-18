@@ -1,8 +1,13 @@
 {
-  "version": "1.1.3",
-  "source": "approved V1.1.3 dist; reachable files; two PDFs deduplicated with every page text and render verified identical",
-  "unpackedBytes": 689675098,
+  "version": "1.1.4",
+  "source": "V1.1.3 verified release; performance assets derived; approved copy and type preserved",
+  "unpackedBytes": 424458587,
   "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
     {
       "path": "assets/comics/E01_P01-preview.webp",
       "bytes": 159830,
@@ -272,11 +277,6 @@
       "path": "assets/comics/E06_P06.png",
       "bytes": 3300574,
       "sha256": "6b42ed9c6ba651b4b89db69fb93ba6d8a5ae9a81eaccc69086fe0e038c967e6c"
-    },
-    {
-      "path": "assets/docs/competitor.pdf",
-      "bytes": 52444874,
-      "sha256": "1547ce4099084da53cfda8fef17b38daac0cd048ea11528de19ea127db803184"
     },
     {
       "path": "assets/docs/competitor/page-1.webp",
@@ -849,6 +849,11 @@
       "sha256": "6a077911cf877a2c3b6c2d313e697618b59b5b601cea6407f6ce7119a1985c02"
     },
     {
+      "path": "assets/docs/competitor.pdf",
+      "bytes": 52444874,
+      "sha256": "1547ce4099084da53cfda8fef17b38daac0cd048ea11528de19ea127db803184"
+    },
+    {
       "path": "assets/docs/marketing-case-v81/page-1.webp",
       "bytes": 62268,
       "sha256": "4cbbe2b35d067d9bab764fccd6bbd83c50262529b17d8f243e5fa75817615250"
@@ -1054,11 +1059,6 @@
       "sha256": "654d1145d518fea7f7ea2c6d14475688c2847d7eb5a8d20a1d8d6f9820035d9e"
     },
     {
-      "path": "assets/docs/marketing-phenomenon.pptx",
-      "bytes": 89567649,
-      "sha256": "57fb4ae8e3c06a7de2f2200c5772e9341a655e1d65eeb442697954cfa8bfc4ba"
-    },
-    {
       "path": "assets/docs/marketing-phenomenon/page-1.webp",
       "bytes": 45658,
       "sha256": "859ccca1a26fbaf16c0c000a4516f3474d3b775378e6cd4cb1885f137af51528"
@@ -1219,9 +1219,9 @@
       "sha256": "85c12eeee1410e8ddd28d32134f6b3527a9c471a2479d8b90bc1222ec6428d35"
     },
     {
-      "path": "assets/docs/prd.pdf",
-      "bytes": 3273348,
-      "sha256": "7e9c3c5321d9c9a7bd8ce7ed8dd1da95e95b32fa84193cf5b39bd20ddfee9ebf"
+      "path": "assets/docs/marketing-phenomenon.pptx",
+      "bytes": 89567649,
+      "sha256": "57fb4ae8e3c06a7de2f2200c5772e9341a655e1d65eeb442697954cfa8bfc4ba"
     },
     {
       "path": "assets/docs/prd/page-1.webp",
@@ -1464,9 +1464,14 @@
       "sha256": "e26ce9a4fc0db85e9f6f5c82a9bd06dd300789c87f976306c368bdf40fa9334d"
     },
     {
-      "path": "assets/manjian-icon.png",
-      "bytes": 176335,
-      "sha256": "111201e9e6b7220d832d5ef70a3807fe36428f2e8c91db8cd26de753fd659bbf"
+      "path": "assets/docs/prd.pdf",
+      "bytes": 3273348,
+      "sha256": "7e9c3c5321d9c9a7bd8ce7ed8dd1da95e95b32fa84193cf5b39bd20ddfee9ebf"
+    },
+    {
+      "path": "assets/manjian-icon-small.png",
+      "bytes": 35554,
+      "sha256": "5bfe22ed222cdc596ada56f3a81adca29658214a3ee6ce3d44c944e3eac0a5ee"
     },
     {
       "path": "assets/personal-mark.svg",
@@ -1474,64 +1479,69 @@
       "sha256": "05e2c96526c21faffca6723424f558619270d8465b2f542962d7796a5fa23559"
     },
     {
+      "path": "assets/photos/avatar-320.webp",
+      "bytes": 10134,
+      "sha256": "a73b7575719042307be7055d1c671de40c2d9958253dc3d2166a048fba99a22d"
+    },
+    {
+      "path": "assets/photos/avatar-640.webp",
+      "bytes": 33752,
+      "sha256": "99b4f9dd092322f45ff8cf1aa76618d717e2516628cb206009c15c39fb0bb6f5"
+    },
+    {
       "path": "assets/photos/生活照3.jpg",
       "bytes": 323109,
       "sha256": "0c2eb531837b365b5a0e136574a3924055e0b0a896ae7b3b0dc8c81257891073"
     },
     {
-      "path": "assets/photos/证件照1.JPG",
-      "bytes": 3691585,
-      "sha256": "4467d4a6570fd56396b9f6487a432188fc4f08c187521f27addebd05e8a50cb4"
+      "path": "assets/posters/camera.webp",
+      "bytes": 46856,
+      "sha256": "2411e976198c840caa0a33790eb1792e172d23c37d6ba38764bb7e51b1fa8d12"
     },
     {
-      "path": "assets/posters/camera.jpg",
-      "bytes": 90692,
-      "sha256": "a16ae3c636e87a2b5ecbba73f4bc5592b641217b9a03a182d2e4c7f8b7a86efc"
+      "path": "assets/posters/different-1.webp",
+      "bytes": 45302,
+      "sha256": "7230893bb7c001eaa3c3e3386472d55e3d16e95cea064e94d9133f8a7235b544"
     },
     {
-      "path": "assets/posters/different-1.jpg",
-      "bytes": 97269,
-      "sha256": "361bdc87ec73388b04aa5e67720bbecefc706a398acd196eb65ab8721e82b8e3"
+      "path": "assets/posters/different-2.webp",
+      "bytes": 44696,
+      "sha256": "05ec83730fd3d4195559da59729afeeb13945c579b791167be695d2fdab12574"
     },
     {
-      "path": "assets/posters/different-2.jpg",
-      "bytes": 94649,
-      "sha256": "bc417c1218bea1fd342e74e26cc5a792b7a7671b5c6756881478c545bb55fee7"
+      "path": "assets/posters/dream.webp",
+      "bytes": 72126,
+      "sha256": "f8c38f6b3f0d5d9e5c2f08ecce4819ef1b051ffa1b11a9c6a79fb81e7abf0dc2"
     },
     {
-      "path": "assets/posters/dream.jpg",
-      "bytes": 133485,
-      "sha256": "7f1bcc3d85f50f95fd58e0dd8fc1f7d942e0416e424946a90f82ac8d95d06efa"
+      "path": "assets/posters/marry-11.webp",
+      "bytes": 65732,
+      "sha256": "38dfb33daa3050f527be7d63789d4fcb348238e736f1387237a02e2b229eb32f"
     },
     {
-      "path": "assets/posters/marry-11.jpg",
-      "bytes": 138685,
-      "sha256": "f3bb0bd0481d7be65a3f16b14d32b1e0f7706ac7862eeda626d2613651a9fb3d"
+      "path": "assets/posters/marry-12.webp",
+      "bytes": 53112,
+      "sha256": "f88f2b092f19804582ff2cd44545e483c3d6e12340d29681bf2df83010187036"
     },
     {
-      "path": "assets/posters/marry-12.jpg",
-      "bytes": 114290,
-      "sha256": "0bb026d6a2a966c88efd39ca987c967167a1ea8e15a9093e19674257a7d3218b"
+      "path": "assets/posters/queen.webp",
+      "bytes": 53018,
+      "sha256": "16c2fe380006de26fee10d7aa1a0909e8096773b64228d3dcb81dd8f85b8cdf1"
     },
     {
-      "path": "assets/posters/queen.jpg",
-      "bytes": 113072,
-      "sha256": "e28250390a8dfbb0500989856caae0ed802d0e149e78c96185a95f6fccb257f8"
+      "path": "assets/posters/set.webp",
+      "bytes": 43024,
+      "sha256": "398096a484a719f4eda5123ee1288fbfa7ec7367269cead2f32af6620e1e86f6"
     },
     {
-      "path": "assets/posters/set.jpg",
-      "bytes": 89648,
-      "sha256": "0240eca2248c0f65a810c66c61ecf4c0925cd61b1eb014bf3a48df428a135680"
+      "path": "assets/posters/ten-years.webp",
+      "bytes": 67496,
+      "sha256": "ee95c8fde68ebddee763a31e7f88bf618c2b008c098505ddce09e16b609f8512"
     },
     {
-      "path": "assets/posters/ten-years.jpg",
-      "bytes": 141551,
-      "sha256": "ef7fb1f7ff749c7e2f3f81ea9bd626ae6a99f58c021bb9a9ea1f16f443ee0252"
-    },
-    {
-      "path": "assets/posters/visit.jpg",
-      "bytes": 71191,
-      "sha256": "a171d355c74f72c54d589df48a40d4d010a9260965299f1787187c07d1038f69"
+      "path": "assets/posters/visit.webp",
+      "bytes": 28246,
+      "sha256": "97fb31a8c2aefc2f359ba32aeefd139ad9cd5f30a1307f0b4c5dbaa530702b78"
     },
     {
       "path": "assets/software/after-effects-original.svg",
@@ -1574,54 +1584,54 @@
       "sha256": "14bfee2c813b9f4225a6a8d112b53652f6641c310938de34f1c76bae802fcb84"
     },
     {
-      "path": "assets/video/camera.mp4",
-      "bytes": 15923513,
-      "sha256": "d926888b1037bcb3aeb4a63e99d937ee92d1fa10321e2c9856b12281db5a3bb4"
+      "path": "assets/video/camera-web.mp4",
+      "bytes": 4630947,
+      "sha256": "ba3529b3074470dd6a3a73c4ece75e7d7db858e19abec75132f11f69cea48c69"
     },
     {
-      "path": "assets/video/different-1.mp4",
-      "bytes": 52893248,
-      "sha256": "3b58aa9eb7da8b42a06f19f627508a7715bda170465affdb0d1931a834e3331a"
+      "path": "assets/video/different-1-web.mp4",
+      "bytes": 26589313,
+      "sha256": "9f350d8cdc6a8b4b62ca3d3f102ef587cca64098449222bfea071f71900aa470"
     },
     {
-      "path": "assets/video/different-2.mp4",
-      "bytes": 57127366,
-      "sha256": "fc3eee80be8f9c071dd98e783559ade634327957742683f6816b0d74f957e60a"
+      "path": "assets/video/different-2-web.mp4",
+      "bytes": 28922467,
+      "sha256": "fa05d6cc49d53d06c15a75ed34766a18ad76d2fa3a677cf5f28b11f79a02321a"
     },
     {
-      "path": "assets/video/dream.mp4",
-      "bytes": 19097769,
-      "sha256": "fbd819948e310088d3e0931a54bb02f7210c4f358c3bbd0da9d91a8c18b34d8e"
+      "path": "assets/video/dream-web.mp4",
+      "bytes": 5623231,
+      "sha256": "a56876c3ee63783d673064dade250161326719859ab682a54cd77d260ef174ea"
     },
     {
-      "path": "assets/video/marry-11.mp4",
-      "bytes": 42745364,
-      "sha256": "5975d883a0676960d8d16abe71f891a308520868714845006a8b4c4ad70ef35e"
+      "path": "assets/video/marry-11-web.mp4",
+      "bytes": 6701915,
+      "sha256": "7a31d1289f5168c3080149c20db09dd1bd820e1ebec8ab3ae85a4c16e486e075"
     },
     {
-      "path": "assets/video/marry-12.mp4",
-      "bytes": 19515509,
-      "sha256": "6699ad326b1a63df57f19abcddc580dfc363009733335c900ab559cba86155f9"
+      "path": "assets/video/marry-12-web.mp4",
+      "bytes": 5845079,
+      "sha256": "c64f887429ec1b25258bcf95b7a3fb4c8dc62d9d6a86fbb29b441f2b00c4ea0c"
     },
     {
-      "path": "assets/video/queen.webm",
-      "bytes": 4384661,
-      "sha256": "347da7760ca2a6687ab1381077a2d40ecd55388f08e6e75551ecec4fa874a1d1"
+      "path": "assets/video/queen-web.mp4",
+      "bytes": 3832107,
+      "sha256": "1d6a451fba88f587c0c88e1bd2e40a6556d17c3b14b6d3508dd21eb10a936d76"
     },
     {
-      "path": "assets/video/set.mp4",
-      "bytes": 61629934,
-      "sha256": "c5c50360cf1033b249dacf02f46d1dd7c98ad95509deeee3e2d6d74f51dcfe7f"
+      "path": "assets/video/set-web.mp4",
+      "bytes": 16165756,
+      "sha256": "2b4eea88b27446f95029f2df5d87f2d8196470722a09a4b434c21abd08989953"
     },
     {
-      "path": "assets/video/ten-years.mp4",
-      "bytes": 44975766,
-      "sha256": "0ff18503765a308e97b79b86b6429ec95ea69d51eb62c8f3f91148831cb960c5"
+      "path": "assets/video/ten-years-web.mp4",
+      "bytes": 13338373,
+      "sha256": "2ed4ecc08ec5fbc7ed37e93142b6b5032e070b7e0813b6c2b338ae15c301bdeb"
     },
     {
-      "path": "assets/video/visit.mp4",
-      "bytes": 75557016,
-      "sha256": "311ad1c2c4c85a5ea5a3fa71f72241e9e129cbcb7149d269a0e08dd755d83a3e"
+      "path": "assets/video/visit-web.mp4",
+      "bytes": 21334196,
+      "sha256": "ce3445b506f6f17f9d1d36c63be26ba8abd168f5bd34bcf4269b809eb2c4c2b7"
     },
     {
       "path": "assets/李恺祺-简历.pdf",
@@ -1630,113 +1640,23 @@
     },
     {
       "path": "content.js",
-      "bytes": 72896,
-      "sha256": "0d2175599f509654721961910f5fb20e077d567eaa765ea354baac3a71a653cd"
+      "bytes": 72945,
+      "sha256": "4789bc50627e42e3af45bad2eae4809b1379fbf5bc0e9d58d865728aa5201692"
     },
     {
       "path": "index.html",
-      "bytes": 38035,
-      "sha256": "e9c1ea2ec409f553c878b27b98871b7ae7edf85c34144134e380fc06e6fc4249"
+      "bytes": 37314,
+      "sha256": "7e204cdd31db4bad72caa3bcac8fb192f6d2ab1527896dba101f4eeeb79d2a23"
     },
     {
-      "path": "layout-audit.js",
-      "bytes": 2256,
-      "sha256": "5e2ddfacecd4f5f45844bb5e01bd9ee07498dc0781eb588a033c247ab683b7a3"
+      "path": "site-v114.css",
+      "bytes": 126072,
+      "sha256": "126ae26697bc914adce19b5ff1c91ea52774a6db1b362164c3221e962aa75e32"
     },
     {
-      "path": "media-dimensions.js",
-      "bytes": 240,
-      "sha256": "c5f3b8d807c2413617bc6a2ee2c236a86f3cbe90c66635df5a99eca85815b1fc"
-    },
-    {
-      "path": "site-adjustments.css",
-      "bytes": 4798,
-      "sha256": "e94661145ba8cbfea10df67f868f65e99bc2e92b01ce383d72db7b2114644728"
-    },
-    {
-      "path": "site-adjustments.js",
-      "bytes": 2847,
-      "sha256": "70b37c17fc958bc24693a0f6093c096786464da79846c36f51d2db55b84a55af"
-    },
-    {
-      "path": "site-v100.css",
-      "bytes": 7258,
-      "sha256": "a7e7132be82b234552cde151b3c05aabff2e4443a9d1c20a8975a42e744dfefd"
-    },
-    {
-      "path": "site-v100.js",
-      "bytes": 1958,
-      "sha256": "c91c5cb7ab7c86fcee28fb813884a9a9f727905a01b23c7e37aaf3161e127fc4"
-    },
-    {
-      "path": "site-v102.css",
-      "bytes": 1277,
-      "sha256": "c57052902b2b884c38acc5101ae51c4160e16da295a2200cbc989bfbbc8e0d99"
-    },
-    {
-      "path": "site-v112.css",
-      "bytes": 11015,
-      "sha256": "adfb5de44deb429ffc67d296d760aed6a0b8b2f851f8b1e52fd305864d960dab"
-    },
-    {
-      "path": "site-v112.js",
-      "bytes": 7320,
-      "sha256": "f460cb19b77696e90ac546d43f9045c816e434c92fa76562916dcaf525e4aec1"
-    },
-    {
-      "path": "site-v113.css",
-      "bytes": 3110,
-      "sha256": "f2b359e9bfa5ce7157d122539a3f3e14dd29c7dc6dcb544fca1c255ec6c26e3d"
-    },
-    {
-      "path": "site-v113.js",
-      "bytes": 4237,
-      "sha256": "3a222d74d1cdc51d60bd6e4a5c83025969eaee49ff95c704d5585919242048fb"
-    },
-    {
-      "path": "site-v7.css",
-      "bytes": 23835,
-      "sha256": "ceffe71f9df46bded89679cf96ae24269bbd488af01d90860411a367e8dfdaa6"
-    },
-    {
-      "path": "site-v8.css",
-      "bytes": 14513,
-      "sha256": "e34a4a1852991ccca99e19ee1f13d00ee15165a8911945a5a55bdefe13e655aa"
-    },
-    {
-      "path": "site-v81.css",
-      "bytes": 461,
-      "sha256": "de30c9eccc5088ee85cdfef8492156d9f3f682cfc9c8e51f214cddab25b29364"
-    },
-    {
-      "path": "site-v82.css",
-      "bytes": 2700,
-      "sha256": "ffe5b8c67d2c4f34999ca09b0f3f7aca2c9a6aa961d558c738046e6cfb87b04f"
-    },
-    {
-      "path": "site-v9.css",
-      "bytes": 19494,
-      "sha256": "14442af1a16a954de71e71a542cbbd57b5b87946d0094a2afa8160575ce0b607"
-    },
-    {
-      "path": "site-v92.css",
-      "bytes": 903,
-      "sha256": "44278260036c9cdc7f1a5110b95607a03f6ad0f22098c0564c1e0d64ebbc4f5c"
-    },
-    {
-      "path": "site.css",
-      "bytes": 34796,
-      "sha256": "ea0201548ee037c5be63fc61f3994e5dddb0ff37d9f28e0d2051c8517989bf3a"
-    },
-    {
-      "path": "site.js",
-      "bytes": 19218,
-      "sha256": "5d917b9cec6d9ed156ade65b64171ea458416f7d2a243fd4f4aceb61befc5cc5"
-    },
-    {
-      "path": "tool-v8.js",
-      "bytes": 22083,
-      "sha256": "8bb78db75ad2ec982bdc258c790af3fc718a526e33bac7efe70a4e6a7965b731"
+      "path": "site-v114.js",
+      "bytes": 62574,
+      "sha256": "e20c0c5e16caec2b37a29cfd65d8ee2cce9ab17b861b061453e54891b435af55"
     }
   ]
 }
